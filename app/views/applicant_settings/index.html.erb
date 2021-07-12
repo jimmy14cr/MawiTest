@@ -33,18 +33,20 @@
   <div class="form-group">
     <label class="labelSpacing" for="confirmationPage">Confirmation Page Text</label>
     <textarea class="form-control" id="confirmationPage" rows="3" placeholder="Thank you for applying!"></textarea>
-    <span class="badge badge-pill badge-danger" id="confirmationPageMessage"></span>
+    <span class="badge badge-pill badge-danger" style="color:red" id="confirmationPageMessage"></span>
   </div>
   <div class="form-group">
     <label class="labelSpacing" for="redirectUrl">Redirect URL (leave blank to ignore)</label>
-    <input type="text" class="form-control" id="exampleInput1">
+    <input type="text" class="form-control" id="redirectUrl">
+    <span class="badge badge-pill badge-danger" style="color:red" id="redirectUrlMessage"></span>
   </div>
   <div class="form-group">
     <label class="labelSpacing" for="logoutUrl">Logout URL (leave blank to ignore)</label>
-    <input type="text" class="form-control" id="exampleInput2">
+    <input type="text" class="form-control" id="logoutUrl">
+    <span class="badge badge-pill badge-danger" style="color:red" id="logoutUrlMessage"></span>
   </div>
     </form>
-    <button style="background-color: #92d36e; border-color: #92d36e; margin-top: 50px" type="button" class="btn btn-success" id="btnApplyChanges">Apply Changes</button>
+    <button style="background-color: #92d36e; border-color: #92d36e; margin-top: 50px" class="btn btn-success" id="btnApplyChanges">Apply Changes</button>
 </div>
 
 <%= javascript_pack_tag 'test' %>
