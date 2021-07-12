@@ -1,0 +1,2 @@
+module ApplicantSettingsHelper
+end
